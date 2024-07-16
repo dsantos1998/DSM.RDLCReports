@@ -1,0 +1,91 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>Exe</OutputType>
+		<TargetFramework>net8.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Remove="Imgs\1.png" />
+		<None Remove="Imgs\2.png" />
+		<None Remove="Imgs\3.png" />
+		<None Remove="Imgs\4.png" />
+		<None Remove="Imgs\5.png" />
+		<None Remove="Imgs\6.png" />
+		<None Remove="Imgs\7.png" />
+		<None Remove="Imgs\8.png" />
+		<None Remove="Imgs\9.png" />
+		<None Remove="Reports\Console-Sample-Test.rdlc" />
+		<None Remove="Reports\Test-Original.rdlc" />
+		<None Remove="Reports\Test-Tabla.rdlc" />
+		<None Remove="Reports\Test.rdlc" />
+		<None Remove="Reports\__Test.rdlc" />
+		<None Remove="Reports\___Test.rdlc" />
+		<None Remove="Reports\____Test.rdlc" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<EmbeddedResource Include="Imgs\1.png">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</EmbeddedResource>
+		<EmbeddedResource Include="Imgs\2.png">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</EmbeddedResource>
+		<EmbeddedResource Include="Imgs\3.png">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</EmbeddedResource>
+		<EmbeddedResource Include="Imgs\4.png">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</EmbeddedResource>
+		<EmbeddedResource Include="Imgs\5.png">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</EmbeddedResource>
+		<EmbeddedResource Include="Imgs\6.png">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</EmbeddedResource>
+		<EmbeddedResource Include="Imgs\7.png">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</EmbeddedResource>
+		<EmbeddedResource Include="Imgs\8.png">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</EmbeddedResource>
+		<EmbeddedResource Include="Imgs\9.png">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</EmbeddedResource>
+		<EmbeddedResource Include="Reports\Console-Sample-Test.rdlc">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</EmbeddedResource>
+		<EmbeddedResource Include="Reports\Test-Tabla.rdlc">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</EmbeddedResource>
+		<EmbeddedResource Include="Reports\Test.rdlc">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</EmbeddedResource>
+		<EmbeddedResource Include="Reports\____Test.rdlc">
+		  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</EmbeddedResource>
+		<EmbeddedResource Include="Reports\___Test.rdlc">
+		  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</EmbeddedResource>
+		<EmbeddedResource Include="Reports\Test-Original.rdlc">
+		  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</EmbeddedResource>
+		<EmbeddedResource Include="Reports\__Test.rdlc">
+		  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</EmbeddedResource>
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="DocumentFormat.OpenXml" Version="3.0.2" />
+		<PackageReference Include="ReportViewerCore.NETCore" Version="15.1.21" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Reference Include="DSM.RDLCReports.Console">
+	    <HintPath>bin\Debug\net8.0\DSM.RDLCReports.Console.dll</HintPath>
+	  </Reference>
+	</ItemGroup>
+
+</Project>
